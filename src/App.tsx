@@ -5,17 +5,15 @@ function App() {
     <div className="min-h-screen bg-white">
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50 border-b border-gray-100">
         <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <div className="bg-gradient-to-br from-emerald-500 to-green-600 p-2 rounded-xl">
-              <Leaf className="text-white w-6 h-6" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">DAF-AGRO</span>
+          <div className="flex items-center">
+            <img src="/logo2.png" alt="DAF-AGRO Logo" className="h-24" />
           </div>
           <div className="hidden md:flex space-x-8">
-            <a href="#about" className="text-gray-700 hover:text-emerald-600 transition font-medium">About</a>
-            <a href="#services" className="text-gray-700 hover:text-emerald-600 transition font-medium">Services</a>
-            <a href="#vision" className="text-gray-700 hover:text-emerald-600 transition font-medium">Vision</a>
-            <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition font-medium">Contact</a>
+            <span className="text-gray-700 hover:text-emerald-600 transition font-medium cursor-pointer">Home</span>
+            <span className="text-gray-700 hover:text-emerald-600 transition font-medium cursor-pointer">About</span>
+            <span className="text-gray-700 hover:text-emerald-600 transition font-medium cursor-pointer">Products</span>
+            <span className="text-gray-700 hover:text-emerald-600 transition font-medium cursor-pointer">News</span>
+            <span className="text-gray-700 hover:text-emerald-600 transition font-medium cursor-pointer">Contact</span>
           </div>
           <a href="#contact" className="bg-gradient-to-r from-emerald-600 to-green-600 text-white px-6 py-2.5 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold">
             Get in Touch
@@ -23,7 +21,7 @@ function App() {
         </nav>
       </header>
 
-      <section className="relative pt-32 pb-24 px-6 overflow-hidden">
+      <section className="relative pt-40 pb-24 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50"></div>
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(5 150 105) 1px, transparent 0)', backgroundSize: '40px 40px'}}></div>
 
@@ -118,25 +116,25 @@ function App() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <img
-                    src="https://images.pexels.com/photos/2933243/pexels-photo-2933243.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    src="/Agro-Machinery-Catalogue.jpg"
                     alt="Agricultural machinery"
                     className="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <img
-                    src="https://images.pexels.com/photos/1459339/pexels-photo-1459339.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Spices"
-                    className="rounded-2xl shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                    src="/naads-slider.jpg"
+                    alt="NAADS Slider"
+                    className="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="space-y-4 pt-8">
                   <img
-                    src="https://images.pexels.com/photos/5029857/pexels-photo-5029857.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Farming"
-                    className="rounded-2xl shadow-lg w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                    src="/8f10eee5-9b21-4107-bda4-1ececa8bf2f3.jpg"
+                    alt="Tractor"
+                    className="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <img
-                    src="https://images.pexels.com/photos/4505898/pexels-photo-4505898.jpeg?auto=compress&cs=tinysrgb&w=800"
-                    alt="Warehouse"
+                    src="/farm004px.jpg"
+                    alt="Import operations"
                     className="rounded-2xl shadow-lg w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -246,7 +244,7 @@ function App() {
               <div className="relative p-10">
                 <div className="relative w-full h-64 mb-6 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/4246209/pexels-photo-4246209.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src="/Agro-Machinery-Catalogue.jpg"
                     alt="Import operations"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -282,7 +280,7 @@ function App() {
               <div className="relative p-10">
                 <div className="relative w-full h-64 mb-6 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/3856428/pexels-photo-3856428.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src="/naads-slider.jpg"
                     alt="Export operations"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -318,7 +316,7 @@ function App() {
               <div className="relative p-10">
                 <div className="relative w-full h-64 mb-6 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src="/8f10eee5-9b21-4107-bda4-1ececa8bf2f3.jpg"
                     alt="Agro-processing"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -354,7 +352,7 @@ function App() {
               <div className="relative p-10">
                 <div className="relative w-full h-64 mb-6 rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                    src="/farm004px.jpg"
                     alt="Partnership development"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -570,11 +568,8 @@ function App() {
 
         <div className="container mx-auto relative z-10">
           <div className="flex flex-col items-center text-center space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-br from-emerald-500 to-green-600 p-3 rounded-xl">
-                <Leaf className="text-white w-8 h-8" />
-              </div>
-              <span className="text-3xl font-bold text-white">DAF-AGRO LIMITED</span>
+            <div className="flex items-center">
+              <img src="/logo2.png" alt="DAF-AGRO Logo" className="h-20" />
             </div>
 
             <p className="text-xl text-gray-300 max-w-2xl">
@@ -596,7 +591,10 @@ function App() {
                 Plot 1122, Sir Apollo Kaggwa Road, Kampala, Uganda
               </p>
               <p className="text-gray-500 text-sm mt-4">
-                © 2024 DAF-AGRO LIMITED. All rights reserved.
+                © 2025 DAF-AGRO LIMITED. All rights reserved.
+              </p>
+              <p className="text-gray-500 text-sm mt-2">
+                Developed by <a href="https://cavemotions.com" className="text-emerald-400 hover:text-emerald-300 transition">Cave Motions</a>
               </p>
             </div>
           </div>
